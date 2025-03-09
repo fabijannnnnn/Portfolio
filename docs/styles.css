@@ -1,6 +1,7 @@
 /* Image */
 img {
     width: 100%;
+    display: block;
     max-width: 1000px;
     height: 100%;
     max-height: 1000px;
@@ -8,6 +9,8 @@ img {
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     z-index: 1000;
+    /*width: min(80%, 800px);*/
+
 }
 img:hover {
     transform: scale(0.95);
@@ -34,7 +37,6 @@ h1 {
     justify-content: center;
     width: 100%;
     position: relative;
-    /*flex-direction: column; !* Stack title and paragraph vertically *!*/
     align-items: center;
 }
 .subTitle h2 {
@@ -63,6 +65,9 @@ p {
     font-family: "Roboto Light", monospace;
     font-size: 1.5rem;
     text-align: center;
+    overflow: visible;
+    white-space: nowrap;
+    width: 100%;
 }
 .navigator a {
     color: #007bff;
