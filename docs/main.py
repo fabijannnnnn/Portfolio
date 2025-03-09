@@ -12,7 +12,7 @@ def download_images(query, num_images, api_k):
     response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
-        directory = os.path.join("images", query)
+        directory = os.path.join("docs/images", query)
         data = response.json()
 
         if not os.path.exists(directory):
